@@ -1,0 +1,462 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AxisGroup</title>
+    <link href="css/all.css" rel="stylesheet" >
+    <link href="css/bootstrap-grid.min.css"  rel="stylesheet">
+    <link href="css/bootstrap.min.css"  rel="stylesheet">
+    <link href="css/main.css"  rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <header>
+         
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+            <div class="container-fluid">  
+                       
+                <a class="navbar-brand logo" href="#">
+                    <img src="images/logo.png" class="rounded-circle">
+                    Axis<span>Group</span>
+                </a>
+              <!-- Links -->
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="true">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#" >Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#" >About</a>
+                </li>
+                <li class="nav-item ">                 
+                  <div class="dropdown ">
+                    <a class="dropdown-toggle nav-link text-light " href="#" data-bs-toggle="dropdown">Programs</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item bg-dark text-light" href="index.html" target="_blank">Matlab</a></li>
+                        <li><a class="dropdown-item bg-dark text-light" href="index.html" target="_blank">Anaconda</a></li>
+                        <li><hr class="dropdown-divider"></hr></li>
+                        <li><a class="dropdown-item bg-dark text-light" href="index.html" target="_blank">Pycharm</a></li>
+                        <li><a class="dropdown-item bg-dark text-light" href="index.html" target="_blank">Jupyter Notebook</a></li>
+                        <li><a class="dropdown-item bg-dark text-light" href="index.html" target="_blank">IDLE</a></li>
+                        <li><a class="dropdown-item bg-dark text-light" href="index.html" target="_blank">Spyder</a></li>
+                        <li><a class="dropdown-item bg-dark text-light" href="index.html" target="_blank">Visual studio</a></li>
+                      </ul>
+                </div><!--close dropdown-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light  disabled" href="#">Contact</a>
+                  </li>              
+              </ul>
+              <form class="d-flex form-search" >
+                <input class="form-control me-4 input-form " type="search" placeholder="Search" >
+                <button class="btn btn-outline-light me-4 btn-form" type="submit">Search</button>
+                <button class="btn btn-outline-light btn-form" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+              </form>              
+              
+            </div><!--close collapse -->            
+          </div><!--close container-fluid-->
+          </nav>
+    </header>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog ">
+              <div class="modal-content">
+        <!-- Modal Header -->
+              <div class="modal-header">
+               <h4 class="modal-title text-dark">Login Form</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div><!--close modal-header-->
+        <!-- Modal body -->
+              <div class="modal-body">
+               <form>
+                 <div class="email">
+                   <label class="form-label">Email Address</label>
+                   <input type="email" class="form-control" aria-describedby="emailHelp">
+                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                 </div><!--close email-->
+                 <div class="password">
+                  <label class="form-label mt-3">Password</label>
+                  <input type="password" class="form-control">                  
+                </div><!--close password-->
+                <div class="form-check form-switch mt-3">
+                  <input class="form-check-input" type="checkbox" id="mySwitch" name="Remmemberme" value="yes" checked>
+                  <label class="form-check-label" for="mySwitch">Remmember me</label>
+                </div><!--close form-check--> 
+                <button class="btn btn-primary mt-3 mb-1 form-control" type="submit">Login</button>               
+               </form>             
+              </div><!--close modal-body-->              
+        <!-- Modal footer -->
+              <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div><!--close modal-footer -->
+              </div><!--close modal-content-->
+              </div><!--close modal-dialog-->
+              </div><!--close modal-->
+
+                <!-- carousel -->
+                <div class="container-fluid p-0">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                
+             
+                  <div class="carousel-indicators pb-1">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div><!--close carousel-indicators-->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active pb-4 text-img">
+                      <img src="images/matlab.png" class="d-block w-100 image-carousel" >
+                      <div class="carousel-caption text-carousel">
+                        <h1 class="h1-carousal text-light" >Matlab</h1>
+                        <a href="" class="btn btn-dark" target="_blank">View this program</a>
+                      </div><!--close carousel-caption-->
+                    </div><!--close carousel-item-->
+                    <div class="carousel-item pb-4 text-img">
+                      <img src="images/anaconda-meta.png" class="d-block w-100 image-carousel" >
+                      <div class="carousel-caption text-carousel">
+                        <h1 class="h1-carousal text-light" >Jupyter Nootebook</h1>
+                        <a href="" class="btn btn-dark" target="_blank">View this program</a>
+                      </div><!--close carousel-caption-->
+                    </div><!--close carousel-item-->
+                    <div class="carousel-item pb-4 text-img">
+                      <img src="images/vs.webp" class="d-block w-100 image-carousel">
+                      <div class="carousel-caption text-carousel">
+                        <h1 class="h1-carousal text-light">Visual Studio</h1>
+                        <a href="" class="btn btn-dark" target="_blank">View this program</a>
+                      </div><!--close carousel-caption-->
+                    </div><!--close carousel-item-->
+                    <div class="carousel-item pb-4 text-img">
+                      <img src="images/netbeans-logo.jpg" class="d-block w-100 image-carousel">
+                      <div class="carousel-caption text-carousel">
+                        <h1 class="h1-carousal text-light">IDLE</h1>
+                        <a href="" class="btn btn-secondary btn-dark" target="_blank">View this program</a>
+                      </div><!--close carousel-caption-->
+                    </div><!--close carousel-item-->
+                  </div><!--close carousel-inner-->
+                  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden ">Next</span>
+                  </button>
+                 
+                </div><!-- close carousel -->
+                
+                <!-- cards -->
+            <div class="card p-4 bg-light text-white border-0">
+              <div class="card-body">
+                <h2 class="card-title welcome-h2">Welcome to AxisGroup</h2>
+                <p class="card-text text-dark welcome-p">This website will help you to know about data science by using matlab and python tools.</p>
+                <a href="#" class="btn btn-dark mt-2">Learn More</a>
+              </div><!--close card-body-->
+            </div> <!-- close cards -->
+            <hr>
+
+            <!--accordion section -->
+            <h3 class="text-center h2-accordion text-light bg-dark p-3 m-0">Python IDEs</h3>
+            <div id="accordionId" class="accordion ">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed  btn-hover" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Visual Studio
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionId">
+                  <div class="accordion-body">
+                    <p class="accordion-body-p"> Visual Studio IDE is a creative launching pad that you can use to edit, debug, and build code, and then publish an app. Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes compilers, code completion tools, graphical designers, and many more features to enhance the software development process. </p>     </div>
+                </div><!--close accordion-collapse-->
+              </div><!--close accordion-item -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed btn-hover" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Jupyter Notebook
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionId">
+                  <div class="accordion-body">
+                    <p class="accordion-body-p"> The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more. Jupyter has support for over 40 different programming languages and Python is one of them. Python is a requirement (Python 3.3 or greater, or Python 2.7) for installing the Jupyter Notebook itself. </p>     </div>
+                </div><!--close accordion-collapse-->
+              </div><!--close accordion-item -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed btn-hover" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                   IDLE
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionId">
+                  <div class="accordion-body">
+                    <p class="accordion-body-p">IDLE is Python's Integrated Development and Learning Environment.
+
+                      IDLE has some features like:
+                      coded in 100% pure Python, using the tkinter GUI toolkit,
+                      cross-platform: works mostly the same on Windows, Unix, and macOS,
+                      And Python shell window (interactive interpreter) with colorizing of code input, output, and error messages.
+                     </p>     </div>
+                </div><!--close accordion-collapse-->
+              </div><!--close accordion-item -->           
+                         
+            </div><!--close accordion-->
+            <hr>
+          
+            <!--card start-->
+            <h3 class="text-center h2-accordion text-light bg-dark p-3 m-0">Download Pycharm</h3>
+            <div class="card p-4 bg-light text-white border-0">
+              <div class="card-body">
+                <h3 class="card-title welcome-h2">To download for windows follow these<a href="https://www.jetbrains.com/pycharm/download/#section=windows" target="_blank" class="a-card"> steps.</a></h3>
+                <h4 class="card-text text-dark mt-2">Then you can start, and just try to run this code</h4>
+               <div class="code-a d-flex"> <a class="btn btn-dark btn-sm btn-card btncopied">Copy</a>
+                <pre>
+                  <code class="text-success code " id="mypython">
+                    Name = input('enter your name: ');
+                    print("Hello" + Name);
+                  </code>
+                </pre>
+              </div><!--close code-a -->               
+                
+              </div><!--close card-body-->
+            </div> <!-- close cards -->
+              <hr>
+
+                <!--card start-->
+            <h3 class="text-center h2-accordion text-light bg-dark p-3 m-0">Download Jupyter Nootebook</h3>
+            <div class="card p-4 bg-light text-white border-0">
+              <div class="card-body">
+                <h3 class="card-title welcome-h2">To download for windows follow these<a href="https://jupyter.org/install" target="_blank" class="a-card"> steps.</a></h3>
+                <h4 class="card-text text-dark mt-2">Then you can start, and just try to run this code</h4>
+               <div class="code-a d-flex"> <a class="btn btn-dark btn-sm btn-card btncopied">Copy</a>
+                <pre>
+                  <code class="text-success code " id="mypython">
+                    def say_hello(recipient):
+                         return 'Hello, {}!'.format(recipient)                
+                    say_hello('Tim')
+                  </code>
+                </pre>
+              </div><!--close code-a -->              
+                
+              </div><!--close card-body-->
+            </div> <!-- close cards -->
+              <hr>
+                <!--card start-->
+            <h3 class="text-center h2-accordion text-light bg-dark p-3 m-0">Download Matlab</h3>
+            <div class="card p-4 bg-light text-white border-0">
+              <div class="card-body">
+                <h3 class="card-title welcome-h2">To download for windows follow these<a href="https://www.mathworks.com/solutions.html?s_tid=mlh_gn_sol" target="_blank" class="a-card"> steps.</a></h3>
+                <h4 class="card-text text-dark mt-2">Then you can start, and just try to run this code</h4>
+               <div class="code-a d-flex"> <a class="btn btn-dark btn-sm btn-card btncopied">Copy</a>
+                <pre>
+                  <code class="text-success code " id="mypython">
+                    Function y= my_fun(x)
+                    y=x.sin(3*x.^2).*exp(-x.^2/4)                    
+                    plot(x,y)
+                  </code>
+                </pre>
+              </div><!--close code-a -->               
+                
+              </div><!--close card-body-->
+            </div> <!-- close cards -->
+              <hr>
+
+              <div class="fixedImg"></div>
+              
+              <h3 class="text-center h2-accordion text-light bg-dark p-3 m-0">Courses</h3>
+              <div class="container-fluid ">
+              <div class="row justify-content-around bg-light">
+                <div class="card card-courses  col-3 mt-5 mb-5">
+                   <a href="#" target="_blank"><img src="images/python.cms" class="a-img"></a>
+                   <div class="card-body">
+                    <h4 class="text-light">Python</h4>
+                    <p class="text-light">Learn python form zero to hero</p>
+                    <a href="#" class="btn btn-light">Show course content</a>
+                   </div><!--close card-body-->
+                </div><!--close card-->
+
+                <div class="card card-courses  col-3 mt-5 mb-5">
+                  <a href="#" target="_blank"><img src="images/matlab2.png" class="a-img"></a>
+                  <div class="card-body">
+                   <h4 class="text-light">Matlab</h4>
+                   <p class="text-light">Learn matlab form zero to hero</p>
+                   <a href="#" class="btn btn-light">Show course content</a>
+                  </div><!--close card-body-->
+               </div><!--close card-->
+
+               <div class="card card-courses  col-3 mt-5 mb-5">
+                <a href="#" target="_blank"><img src="images/ML.jpg" class="a-img"></a>
+                <div class="card-body">
+                 <h4 class="text-light">Machine Learning</h4>
+                 <p class="text-light">Learn Machine Learning form zero to hero</p>
+                 <a href="#" class="btn btn-light">Show course content</a>
+                </div><!--close card-body-->
+             </div><!--close card-->
+
+             <div class="card card-courses  col-3 mt-5 mb-5">
+              <a href="#" target="_blank"><img src="images/dataa.jpg" class="a-img"></a>
+              <div class="card-body">
+               <h4 class="text-light">Data Analysis</h4>
+               <p class="text-light">Learn data analysis form zero to hero</p>
+               <a href="#" class="btn btn-light">Show course content</a>
+              </div><!--close card-body-->
+           </div><!--close card-->
+              </div><!--close row-->
+
+              <div class="row justify-content-around bg-light">
+                <div class="card card-courses  col-4 mb-5">
+                   <a href="#" target="_blank"><img src="images/dl.jpg" class="a-img"></a>
+                   <div class="card-body">
+                    <h4 class="text-light">Deep learning</h4>
+                    <p class="text-light">Learn deep learning form zero to hero</p>
+                    <a href="#" class="btn btn-light">Show course content</a>
+                   </div><!--close card-body-->
+                </div><!--close card-->
+
+                <div class="card card-courses  col-4  mb-5">
+                  <a href="#" target="_blank"><img src="images/AI.jpg" class="a-img"></a>
+                  <div class="card-body">
+                   <h4 class="text-light">AI</h4>
+                   <p class="text-light">Learn AI form zero to hero</p>
+                   <a href="#" class="btn btn-light">Show course content</a>
+                  </div><!--close card-body-->
+               </div><!--close card-->
+
+               <div class="card card-courses  col-4  mb-5">
+                <a href="#" target="_blank"><img src="images/chatbot.png" class="a-img"></a>
+                <div class="card-body">
+                 <h4 class="text-light">Chatbot</h4>
+                 <p class="text-light">Learn to make intelligence chatbot form zero to hero</p>
+                 <a href="#" class="btn btn-light">Show course content</a>
+                </div><!--close card-body-->
+             </div><!--close card-->
+
+             </div><!--close row-->
+            </div><!--close container-fluid-->
+
+              <div class="fixedImg2"></div>
+              <hr>
+              <h2 class="text-center h2-accordion text-dark bg-light p-3 m-0">Thanks for</h2>
+              <div class="container-fluid ">
+              <div class="row justify-content-center bg-light">
+                <div class="card card-courses col-lg-3 col-md-4 col-sm-6 mb-5 mt-5 mx-3">
+                   <a ><img src="images/androw Ng.jpg" class="a-img2"></a>
+                   <div class="card-body">
+                    <p class="text-light card-body-p ">Instructor: Andrew Ng</p>                   
+                   </div><!--close card-body-->
+                </div><!--close card-->
+
+                <div class="card card-courses  col-lg-3 col-md-4 col-sm-6 mb-5 mt-5 mx-3">
+                  <a ><img src="images/Aarti Bagul.jpg" class="a-img2"></a>
+                  <div class="card-body">                  
+                   <p class="text-light card-body-p">Curriculum Engineer: Aarti Bagul</p>
+                  
+                  </div><!--close card-body-->
+               </div><!--close card-->
+
+               <div class="card card-courses col-lg-3 col-md-4 col-sm-6 mb-5 mt-5 mx-3">
+                <a><img src="images/Geoff Ladwig.jpg" class="a-img2"></a>
+                <div class="card-body">
+                 <p class="text-light card-body-p">Ph.D., Data Scientist and Developer: Yan Luo</p>
+                 
+                </div><!--close card-body-->
+             </div><!--close card-->
+
+             </div><!--close row-->
+                
+            </div><!--close container-fluid-->
+             <hr>
+
+             <h2 class="text-center h2-accordion text-dark bg-light p-3 m-0">Join Us</h2>
+             <div class="container-fluid ">
+             <div class="row justify-content-center bg-light">
+              <div class="card card-courses courses mb-5 mt-5 mx-3">             
+                 <div class="card-body">
+                  <h6 class="text-light ">AxisGroup Channel</h6>
+                  <div class="div-icon"><i class="fab fa-youtube icon"></i></div><!--close div-icon-->
+                  <a href="#" target="_blank" class="card-body-a"> Subscribe Now</a>                   
+                 </div><!--close card-body-->
+              </div><!--close card-->
+
+        
+                <div class="card card-courses courses mb-5 mt-5 mx-3">             
+                   <div class="card-body">
+                    <h6 class="text-light ">AxisGroup Page</h6>
+                    <div class="div-icon"><i class="fab fa-facebook-f icon i-face"></i></div><!--close div-icon-->
+                    <a href="#" target="_blank" class=" card-body-a">Follow Us</a>                   
+                   </div><!--close card-body-->
+                </div><!--close card-->
+
+                <div class="card card-courses courses mb-5 mt-5 mx-3">             
+                  <div class="card-body">
+                   <h6 class="text-light ">AxisGroup Channel</h6>
+                   <div class="div-icon"><i class="fab fa-telegram icon i-telegram"></i></div><!--close div-icon-->
+                   <a href="#" target="_blank" class=" card-body-a">Join Now</a>                   
+                  </div><!--close card-body-->
+               </div><!--close card-->
+        
+               <div class="card card-courses courses mb-5 mt-5 mx-3">             
+                <div class="card-body">
+                 <h6 class="text-light ">AxisGroup Page</h6>
+                 <div class="div-icon"><i class="fab fa-linkedin-in icon i-link"></i></div><!--close div-icon-->
+                 <a href="#" target="_blank" class=" card-body-a">Follow Us</a>                   
+                </div><!--close card-body-->
+             </div><!--close card-->                          
+           </div><!--close row-->
+              
+          </div><!--close container-fluid-->
+
+           <footer class="bg-dark pb-1">
+            <div class="container-fluid ">
+              <div class="row">
+                <div class="col-md-4 career text-center">
+                  <hr class="border-top my-3 ">                  
+                  <h5 class="text-light"><div class="div-icon d-inline mx-2"><i class="fas fa-phone-alt text-black"></i></div>Contact Us</h5>
+                  <hr class="border-top my-3" >  
+                  <p class="text-light">Tel : +49 20948444</p>     
+                  <p class="text-light">Address : Berlin </p> 
+                  <p class="text-light">Email : Axisgroup@gmail.com</p>   
+               </div><!--close col-4-->
+
+                <div class="col-md-4 career text-center">
+                   <hr class="border-top my-3">                  
+                   <h5 class="text-light"><div class="div-icon d-inline mx-2"><i class="fas fa-chalkboard-teacher text-black"></i></div>Start or advance your career</h5>
+                   <hr class="border-top my-3">  
+                   <a href="#" target="_blank" class="d-block mb-3 card-body-a">Google Data Analyst</a>
+                   <a href="#" target="_blank" class="d-block mb-3 card-body-a">IBM Data Analyst</a>
+                   <a href="#" target="_blank" class="d-block m-3 card-body-a">IBM Data Science</a>              
+                </div><!--close col-4-->
+
+                <div class="col-md-4 career text-center">
+                  <hr class="border-top my-3">                  
+                  <h5 class="text-light"><div class="div-icon d-inline mx-2"><i class="fas fa-user-graduate text-black"></i></div>Earn a degree or certificate online</h5>
+                  <hr class="border-top my-3 ">  
+                  <p class="text-light">Google Professional Certificates</p>     
+                  <p class="text-light">Bachelor's Degrees</p> 
+                  <p class="text-light">Data Science Degrees</p>               
+               </div><!--close col-4-->
+                
+              
+              </div><!--close row--> 
+              <hr >
+              <p class="text-center text-secondary">Copyright &copy; 2019 AxisGroup Inc. All rights reserved.</p>
+              <hr>
+            </div><!--close container-fluid-->           
+              
+           </footer>
+           
+
+
+                
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+</body>
+</html>
