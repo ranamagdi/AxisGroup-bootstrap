@@ -79,24 +79,45 @@ hr{
     font-size: 20px;
     
 }
-.btn-hover:hover{
-  background-color:rgb(59,88,184);
-  color: white;
+
+
+.btn-hover:active:hover{
+    background-color: rgb(59,88,184);
+    color: white;
 }
+.btn-hover.collapsed:hover{
+    background-color: rgb(59,88,184);
+    color: white;
+} 
 .accordion-body-p{
     font-size: 18px;
 }
-.btn-hover:focus {     
+
+.btn-hover:not(:focus):hover{
+    background-color: rgb(59,88,184);
+    color: white;
+    
+}
+
+/* .btn-hover:active{
+    outline: 3px black solid;
+} */
+
+.btn-hover:active {  
+        
     box-shadow:
-    0 0 3px .1rem rgb(134, 134, 134),
-    0 0 3px .15rem rgb(134, 134, 134);
+    0 0 3px .2rem rgb(134, 134, 134),
+    0 0 3px .2rem rgb(134, 134, 134);
+
   }
 
 .a-card{
  color: #cc3c68;
 }
 .btn-card{
-    outline: rgb(59,88,184) solid 2px ;
+    outline: #6c757d solid 2px ;
+    border: none;   
+    color: black;
     border: none;    
     align-self:center;
     margin-top: -35px;
@@ -104,9 +125,12 @@ hr{
     font-size: 17px;
 }
 .btn-card:hover{
-    background-color:rgb(59,88,184);
-    color: black;
+    
+    color: white;
+
   }
+
+ 
 
  .code{
  
@@ -232,6 +256,8 @@ display: none;
 .card-body-a:hover{
     color: white;
 }
+
+
 /*media*/
 @media(max-width:667px){
     .code{
